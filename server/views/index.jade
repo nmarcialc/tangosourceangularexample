@@ -1,1 +1,17 @@
-h1 intial template
+extends ../includes/layout
+
+block main-content
+    .navBar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href="/") TangoSource Exercise   
+                    h6 use of jscript frameworks
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav   
+                    li
+                        a(href="/") Home
+    section.content
+        div(ng-view)
+
+    footer.container.text-center
+        p &copy; 2017 Test Company ltd.

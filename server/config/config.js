@@ -3,7 +3,7 @@ var rootPath = path.normalize(__dirname +'/../../');
 module.exports ={
     development:{
         rootPath :rootPath,
-        port: process.env.PORT || 5000
+        port: process.env.PORT || 5001
     },
     production:{
         rootPath :rootPath,
