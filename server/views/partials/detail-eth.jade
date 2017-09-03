@@ -1,0 +1,16 @@
+.panel.panel-primary    
+    .panel-heading.text-center Bitcoin - ETH
+    .panel-body 
+        table.table
+            thead
+                tr
+                    th Time
+                    th USD
+                    th EUR
+                    th BTC
+            tbody
+                tr(ng-repeat="ethValue in ethValues")
+                    td {{ethValue.time | date:'yyyy-MM-dd HH:mm:ss'}}
+                    td {{ethValue.usd}}
+                    td {{ethValue.eur}}
+                    td {{ethValue.btc}}

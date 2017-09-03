@@ -1,0 +1,14 @@
+.panel.panel-primary    
+    .panel-heading.text-center Bitcoin - BTC
+    .panel-body 
+        table.table
+            thead
+                tr
+                    th Time
+                    th USD
+                    th EUR
+            tbody
+                tr(ng-repeat="bitcoinsValue in bitcoinsValues")
+                    td {{bitcoinsValue.time | date:'yyyy-MM-dd HH:mm:ss'}}
+                    td {{bitcoinsValue.usd}}
+                    td {{bitcoinsValue.eur}}

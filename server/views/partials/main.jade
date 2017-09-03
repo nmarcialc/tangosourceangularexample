@@ -1,0 +1,19 @@
+.container  
+    .jumbotron
+        h2 CryptoCurrency Dashboard
+    .row   
+        .col-md-6
+            div(ng-include="'/partials/chart'")
+        .col-md-6
+            div(ng-include="'/partials/converter'")
+
+    .row
+        .col-md-12
+            div(ng-include="'/partials/footer-details'")
+    .row
+        .col-md-6
+            div(ng-include="'/partials/detail-btc'")
+        .col-md-6
+            div(ng-include="'/partials/detail-eth'")
+
+h6 {{myVar}}
